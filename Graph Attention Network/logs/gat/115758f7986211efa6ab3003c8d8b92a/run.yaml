@@ -1,0 +1,17 @@
+comment: ''
+commit: unknown
+commit_message: ''
+distributed_rank: 0
+distributed_world_size: 0
+is_dirty: false
+load_run: null
+name: gat
+notes: ''
+python_file: d:\Python\Python project\My_project\Graph Attention Network\experiment.py
+repo_remotes: []
+start_step: 0
+tags:
+- gat
+trial_date: '2024-11-01'
+trial_time: '23:00:43'
+uuid: 115758f7986211efa6ab3003c8d8b92a

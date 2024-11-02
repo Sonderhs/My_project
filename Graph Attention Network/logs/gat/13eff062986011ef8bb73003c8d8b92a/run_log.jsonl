@@ -1,0 +1,1 @@
+{"status": "crashed", "rank": 0, "details": "einsum(): the number of subscripts in the equation (2) does not match the number of dimensions (3) for operand 0 and no ellipsis was given", "time": 1730472407.824393}
