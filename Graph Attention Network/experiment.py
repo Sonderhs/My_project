@@ -203,6 +203,8 @@ class Configs(BaseConfigs):
         nodes for each training step along with the edges that span
         across those selected nodes.
         """
+        # device
+        print(f"Training on device: {self.device}")
         # Move the feature vectors to the device
         features = self.dataset.features.to(self.device)
         # Move the labels to the device
