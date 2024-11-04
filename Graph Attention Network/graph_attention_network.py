@@ -47,7 +47,7 @@ class GraphAttentionLayer(nn.Module):
 
         # e.shape=[n_nodes, n_nodes, n_head, 1]
         # squeeze->[n_nodes, n_nodes, n_head]
-        e = self.attn(g_concat)
+        e = self.activation(self.attn(g_concat))
         e = e.squeeze(-1)
 
         # 邻接矩阵adj_mat的shape为[n_nodes, n_nodes, n_heads]或[n_nodes, n_nodes, 1]
