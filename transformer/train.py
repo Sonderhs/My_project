@@ -2,9 +2,6 @@ import torch
 from torch import nn
 import math
 import torch.nn.functional as F
-# from multi_head_attention import MultiheadAttention
-# from transformer_encoder import *
-# from transformer_decoder import *
 from transformer import *
 
 def initialize_weights(m):
@@ -26,7 +23,6 @@ if __name__ == "__main__":
     hidden = 1024
     drop_prob = 0.1
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    # "cuda:0" if torch.cuda.is_available() else 
 
     model = Transformer(
         src_pad_idx=src_pad_idx,
@@ -49,4 +45,3 @@ if __name__ == "__main__":
 
     result = model(src, trg)
     print(result, result.shape)
-    print(device)
